@@ -29,12 +29,12 @@ jobs:
           run-settings-json: |
             {
               "name": "GitHubAction-${{ github.workflow }}_${{ github.run_id }}_${{ github.run_attempt }}",
-              "projectArn": "Device Farm Workshop",
+              "projectArn": "Device Farm Demo",
               "appArn": "aws-devicefarm-sample-app.apk",
               "devicePoolArn": "Top Devices",
               "test": {
                 "type": "APPIUM_NODE",
-                "testPackageArn": "MySampleAndroidTests.zip",
+                "testPackageArn": "MySampleAndroidTests-2.zip",
                 "testSpecArn": "webdriverio_spec_file.yml"
               },
               "configuration": {
